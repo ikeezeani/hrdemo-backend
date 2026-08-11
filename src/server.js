@@ -46,6 +46,7 @@ app.use('/api/settings', require('./routes/settingsRoutes'));
 app.use('/api/dashboard', require('./routes/dashboardRoutes'));
 app.use('/api/users', require('./routes/userRoutes'));
 app.use('/api/admin', require('./routes/adminRoutes'));
+app.use('/api/deletion-requests', require('./routes/deletionRequestRoutes'));
 
 // Serve uploaded employee photos. Mounted under /api so it rides the same
 // reverse-proxy path (/api) already configured for Vite (dev) and Nginx (prod)
